@@ -1,7 +1,7 @@
 var banner = document.getElementById("bannerTime");
-var bWidth = 160;
+var bWidth = 728;
 var bW = bWidth;
-var bHeight = 600;
+var bHeight = 90;
 var bH = bHeight;
 
 function doExitEvent() {
@@ -58,7 +58,7 @@ function startBanner() {
         tl.to("#bannerTime", 0.5, {autoAlpha:1});
     
     tl.add("sequence 1");
-        tl.to("#peacock_animation", 5, {ease: Power2.easeInOut, x:399, y:387, scale:0.2}, "+=1.5");
+        tl.to("#peacock_animation", 5, {ease: Power2.easeInOut,x:-1895,y:-1932, scale:0.12}, "+=1.5");
         tl.to("#eye", 0.1, {autoAlpha:1}, "-=5.75");
         tl.to("#eye", 0.1, {autoAlpha:0}, "-=5.55");
         tl.to("#type_1", 0.3, {autoAlpha:1}, "-=1");
@@ -68,17 +68,17 @@ function startBanner() {
         tl.to("#peacock_animation", 0.7, {ease: Power2.easeInOut, autoAlpha:0}, "-=0.7");
     
     
-   tl.add("sequence 2");
+    tl.add("sequence 2");
         tl.set(["#white_box"], {autoAlpha:1});
-        tl.set(["#peacock_animation"], {scale:0.68,x:157,y:161, autoAlpha:0});
+        tl.set(["#peacock_animation"], {scale:0.6, x:-868 ,y:-886, autoAlpha:0});
         tl.to("#peacock_animation", 1, {ease: Power2.easeInOut, autoAlpha:1}, "+=0");
-        tl.from("#white_box", 0.5, {ease: Sine.easeOut, y:254}, "-=0.5");
+        tl.from("#white_box", 0.5, {ease: Sine.easeOut, y:122}, "-=0.5");
         tl.to("#type_3", 1, {autoAlpha:1}, "+=0");
         tl.to("#type_3", 0.3, {autoAlpha:0}, "+=3");
         tl.to("#eye", 0.1, {autoAlpha:1}, "-=2");
         tl.to("#eye", 0.1, {autoAlpha:0}, "-=1.8");
     
-  tl.add("sequence 3");
+    tl.add("sequence 3");
         tl.to("#logo", 0.3, {autoAlpha:1}, "+=0.3");
         tl.to("#tagline", 0.3, {autoAlpha:1}, "-=0.3");
         tl.to("#cta", 0.3, {autoAlpha:1}, "+=0.5");
